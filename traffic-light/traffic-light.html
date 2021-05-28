@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Simple JavaScript projects bundled together" />
+        <meta
+            name="keywords"
+            content="HTML, CSS, JavaScript, Start-Up Projects, Traffic Light JS, Color Flipper JS, Counter JS, Reviews JS, Responsive Navbar JS, Responsive Sidebar JS, Modal JS, Questions JS, Menu JS, Video JS, Scroll JS, Tabs JS, Countdown To Birthday JS, Lorem Ipsum JS, Grocery Bud JS, Carousel JS"
+        />
+        <meta name="author" content="Maris Lorencs" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="traffic-light.css" />
+
+        <title>Traffic Light - Simple JavaScript</title>
+    </head>
+    <body>
+        <div class="traffic-light">
+            <header class="header">
+                <div class="header-container">
+                    <div class="back-container" onclick="goBack()">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <img class="logo" src="../assets/img/js.png" alt="JS" />
+                    <div class="header-text">
+                        <span class="gray-text">Simple</span>
+                        <span class="yellow-text">JavaScript</span>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="traffic-light-container">
+                    <div class="light stop active-stop"></div>
+                    <div class="light warning"></div>
+                    <div class="light go"></div>
+                </div>
+            </div>
+            <footer class="footer"><div class="footer-text">&copy; Māris Lorencs 2021</div></footer>
+        </div>
+
+        <script type="text/javascript" src="traffic-light.js"></script>
+    </body>
+</html>
