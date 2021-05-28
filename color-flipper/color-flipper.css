@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.color-flipper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-color: #f7df1e;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 10px 0;
+    margin: 0 150px;
+}
+
+.back-container {
+    position: absolute;
+    left: 47px;
+}
+
+.fa-chevron-left {
+    position: relative;
+    left: 3px;
+    font-size: 25px;
+    color: #d8dcd6;
+    cursor: pointer;
+}
+
+.back-container:hover .fa-chevron-left {
+    color: #f7df1e;
+
+    animation: backOnHover 0.8s infinite;
+}
+
+.logo {
+    width: 75px;
+    height: 45px;
+    display: block;
+    margin: 0 -10px 0 0;
+}
+
+.header-text {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.gray-text {
+    color: #d8dcd6;
+}
+
+.yellow-text {
+    color: #f7df1e;
+}
+
+.content {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    margin: 0 200px;
+}
+
+.background-color-label-container {
+    border-radius: 2px;
+    background: #343434;
+    font-style: normal;
+    font-size: 32px;
+    padding: 15px 20px;
+}
+
+.background-color-label {
+    color: #ffffff;
+}
+
+.background-color {
+    font-weight: 700;
+}
+
+.button-container {
+    margin: 20px 0 0 0;
+}
+
+.button {
+    border: 2px solid #343434;
+    border-radius: 2px;
+    background: none;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: #343434;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px 20px;
+
+    transition: background 0.3s, color 0.3s;
+}
+
+.footer {
+    background: #f7df1e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #343434;
+    text-align: center;
+}
+
+@keyframes backOnHover {
+    0% {
+        left: 3px;
+    }
+    50% {
+        left: 0px;
+    }
+    100% {
+        left: 3px;
+    }
+}
