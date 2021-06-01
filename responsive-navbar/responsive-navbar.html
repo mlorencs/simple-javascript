@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Simple JavaScript projects bundled together" />
+        <meta
+            name="keywords"
+            content="HTML, CSS, JavaScript, Start-Up Projects, Traffic Light JS, Color Flipper JS, Counter JS, Reviews JS, Responsive Navbar JS, Responsive Sidebar JS, Modal JS, Questions JS, Menu JS, Video JS, Scroll JS, Tabs JS, Countdown To Birthday JS, Lorem Ipsum JS, Grocery Bud JS, Carousel JS"
+        />
+        <meta name="author" content="Maris Lorencs" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+        <link rel="stylesheet" type="text/css" href="responsive-navbar.css" />
+
+        <title>Responsive Navbar - Simple JavaScript</title>
+    </head>
+    <body>
+        <div class="responsive-navbar">
+            <header class="header">
+                <div class="header-container">
+                    <div class="logo-container">
+                        <div class="back-container" onclick="goBack()">
+                            <i class="fa fa-chevron-left"></i>
+                        </div>
+                        <img class="logo" src="../assets/img/js.png" alt="JS" />
+                        <div class="header-text">
+                            <span class="gray-text">Simple</span>
+                            <span class="yellow-text">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <button class="button-nav" onclick="toggleNavigation()">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="relative-links-container">
+                            <div class="relative-link-container">
+                                <a class="relative-link" href="#">Home</a>
+                            </div>
+                            <div class="relative-link-container">
+                                <a class="relative-link" href="#">About</a>
+                            </div>
+                            <div class="relative-link-container">
+                                <a class="relative-link" href="#">Projects</a>
+                            </div>
+                            <div class="relative-link-container">
+                                <a class="relative-link" href="#">Contact</a>
+                            </div>
+                        </div>
+                        <div class="social-media-links-container">
+                            <div class="social-media-link-container">
+                                <a class="social-media-link" href="https://www.facebook.com/">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="social-media-link-container">
+                                <a class="social-media-link" href="https://twitter.com/">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="social-media-link-container">
+                                <a class="social-media-link" href="https://www.youtube.com/">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                            <div class="social-media-link-container">
+                                <a class="social-media-link" href="https://www.instagram.com/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="content"></div>
+            <footer class="footer"><div class="footer-text">&copy; Māris Lorencs 2021</div></footer>
+        </div>
+
+        <script type="text/javascript" src="responsive-navbar.js"></script>
+    </body>
+</html>
